@@ -6,8 +6,8 @@
     <title>Media query</title>
     <style>
         body{
-            margin: 0;
-            padding: 0;
+            margin: 0px;
+            padding: 0px;
         }
         .page-heading{
             text-align:center ;
@@ -32,7 +32,6 @@
             justify-content: space-around;
             align-items: center;
             flex-wrap: wrap;
-
         }
 
 
@@ -53,6 +52,22 @@
         .flag-emoji{
             font-size: 30px;
         }
+        .menus{
+            margin-left: 150px;
+            display: flex;
+            align-items:center;
+        }
+        .menus-item{
+            margin-right: 150px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        .menu-icon{
+            height: 3opx;
+            width: 30px;
+            margin-right: 5px;
+        }
  
    /* Mobile device */
     @media screen and (max-width:500px){
@@ -72,8 +87,7 @@
         .secondary-content{
             display: none;
         }
-        
-        }
+    }
 
     /* Table device */
     @media screen and (min-width:501px) and (max-width:769px) {
@@ -84,6 +98,7 @@
             height: 60px;
             width:60px ;
         }
+        
     }
 
     /* Desktop Device */
@@ -94,9 +109,42 @@
     </style>
 </head>
 <body>
+
     <div class="navbar">
      <span class="flag-emoji">📚 Book</span>
+    
+    <div class="menus">
+        <span class="menus-item">
+          <img src="history.png" class="menu-icon" alt="history">
+            History
+        </span>
+        <span class="menus-item">
+            <img src="culture.png" class="menu-icon" alt="culture">
+         Culture
+        </span>
+        <span class="menus-item">
+            <img src="partycipation.png" class="menu-icon" alt="prtycipation">
+
+        Partycipation
+    </span>
+        <span class="menus-item">
+            <img src="places.png" class="menu-icon" alt="places">
+
+            Places
+        </span>
+        <span class="menus-item">
+            <img src="goverment.png" class="menu-icon" alt="goverment">
+
+            Goverment
+        </span>
+        <span class="menus-item">
+            <img src="tecnology.png" class="menu-icon" alt="tecnology">
+
+            Tecnology
+        </span>
     </div>
+    </div>
+
 
 
     <h1 class="page-heading">
