@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .page-heading{
+            text-align:center ;
+            font-size: 60px;
+        }
+
+        .know-more{
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background-color:wheat ;
+            padding: 10px;
+            border: 2px solid #ff751a ;
+            cursor: pointer;
+
+        }
+        .header-content{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+
+
+        .celebration{
+            width: 500px;
+        }
+        .content{
+            width: 500px;
+            font-size: 20px;
+        }
+        .navbar{
+            background-color: black;
+            display: flex;
+            align-items: center;
+            padding: 5px 40px;
+            color:white;
+        }
+        .flag-emoji{
+            font-size: 30px;
+        }
+ 
+   /* Mobile device */
+    @media screen and (max-width:500px){
+        .page-heading{
+            font-size: 35px;
+        }
+        .know-more{
+            height:40px ;
+            width:40px ;
+        }
+        .celebration{
+            width: 350px;
+        }
+        .content{
+            font-size: 20px;
+        }
+        .secondary-content{
+            display: none;
+        }
+        
+        }
+
+    /* Table device */
+    @media screen and (min-width:501px) and (max-width:769px) {
+        .page-heading{
+            font-size: 45px;
+        }
+        .know-more{
+            height: 60px;
+            width:60px ;
+        }
+    }
+
+    /* Desktop Device */
+    @media screen and (min-width:769px){
+
+    }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+     <span class="flag-emoji">📚 Book</span>
+    </div>
+
+
+    <h1 class="page-heading">
+       Book Store 📚📚📙
+    </h1>
+
+    <div class="header-content">
+        <img src="book.png" class="celebration" alt="book store">
+      <div class="content">
+        <p>
+            A book is a medium for recording information in the form of writing or images. Modern books are typically in codex format, composed of many pages that are bound together and protected by a cover.[1] They were preceded by several older formats, such as the scroll and the tablet. The book publishing process is the series of steps involved in their creation and dissemination.
+         </p>
+        <p class="secndary-content">
+            The history of books became an acknowledged academic discipline in the 1980s. Contributions to the field have come from textual scholarship, codicology, bibliography, philology, palaeography, art history, social history and cultural history. Its key purpose is to demonstrate that the book as an object, not just the text contained within it, is a conduit of interaction between readers and words. Analysis of each component part of the book reveals its purpose.
+
+
+        </p>
+    </div>
+</div>
+
+    <a href="https://en.wikipedia.org/wiki/Book" target="_blank">
+   <img src="click.png" class="know-more" alt="Click here to know more">
+   </a>
+</body>
+</html>
